@@ -1,0 +1,120 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+header {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	width: auto;
+	height: 80px;
+	background: rgb(77, 77, 77);
+}
+header h1 {
+	display: inline-block;	
+	font-family: bold;
+	color: white;
+	padding-top: 20px;
+	margin-left: 50px
+}
+header > ul {
+	display: inline-block;
+	float: right;
+}
+header ul li {
+	position: relative;
+	list-style-type: none;
+	display: inline-block;
+}
+header ul li a {
+	display: block;
+	width: 110px;
+	height: 55px;
+	padding-top: 25px;
+	font-size: 20px;
+	background: rgb(77, 77, 77);
+	color: white;
+	text-decoration: none;
+	text-align: center;
+}
+header ul li a:hover {
+	background: white;
+	color: black;
+}
+header ul ul {
+	position: absolute;
+	display: none;
+}
+header ul ul ul {
+	position: relative;
+	top: -85px;
+	left: 110px
+}
+header ul li:hover > ul {
+	display: block;
+}
+menu {
+	position: fixed;
+	top: 80px;
+	background: rgb(0, 77, 77);
+	width: 310px;
+	height: auto;
+}
+menu > h1 {
+	background: rgb(45, 89, 134);
+	font-size: 50px;
+	text-align: center;
+	padding: 10px 0;
+}
+menu nav a {
+	display: block;
+	line-height: 66px;
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+	text-decoration: none;
+	padding-left: 25px;
+	box-sizing: border-box;
+	border-top: 1px solid rgb(89, 89, 89);
+	transition: 0.5s
+}
+menu nav a i {
+	margin-right: 15px
+}
+menu nav ul li:hover a{
+	padding-left: 70px;
+}
+main{
+	display: inline-block;
+	background: rgb(153, 153, 153);
+	margin-top: 80px;
+	width: 1039px;
+	height: 543px;
+	float: right;	
+}
+.welcome_wrapper {
+	background-image: url("welcome.jpg");
+	width: 1039px;
+	height: 543px;
+	background-size: cover;
+	background-attachment: scroll;
+}
+.frame {
+	float: right;
+	width: 1039px;
+	height: 543px;
+	background: rgba(0, 0, 0, 0.582);
+}
+.welcome_wrapper .frame h1 {
+	color: white;
+	text-align: center;
+	font-size: 400%;
+	padding-top: 200px
+}
+.wrapper {
+	position: relative;
+	float: right;
+	width: 1035px;
+	height: 640px;
+}
